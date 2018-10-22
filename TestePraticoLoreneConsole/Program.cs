@@ -16,23 +16,23 @@ namespace TestePraticoLoreneConsole
 
             //1. A distância da rota A-B-C
             string[] Exec1 = new string[] { "AB", "BC" };
-            Console.WriteLine(string.Format("A distância da rota A-B-C: {0}", RetornaDistancia(Exec1)));
+            Console.WriteLine(string.Format("#1) A distância da rota A-B-C: {0}", RetornaDistancia(Exec1)));
 
             //2. A distância da rota A-D.
             string[] Exec2 = new string[] { "AD" };
-            Console.WriteLine(string.Format("A distância da rota A-D: {0}", RetornaDistancia(Exec2)));
+            Console.WriteLine(string.Format("#2) A distância da rota A-D: {0}", RetornaDistancia(Exec2)));
 
             //3. A distância da rota A-D-C.
             string[] Exec3 = new string[] { "AD", "DC" };
-            Console.WriteLine(string.Format("A distância da rota A-D-C: {0}", RetornaDistancia(Exec3)));
+            Console.WriteLine(string.Format("#3) A distância da rota A-D-C: {0}", RetornaDistancia(Exec3)));
 
             //4. A distância da rota A-E-B-C-D.
             string[] Exec4 = new string[] { "AE", "EB", "BC", "CD" };
-            Console.WriteLine(string.Format("A distância da rota A-E-B-C-D: {0}", RetornaDistancia(Exec4)));
+            Console.WriteLine(string.Format("#4) A distância da rota A-E-B-C-D: {0}", RetornaDistancia(Exec4)));
 
             //5. A distância da rota A-E-D.
             string[] Exec5 = new string[] { "AE", "ED" };
-            Console.WriteLine(string.Format("A distância da rota A-E-D: {0}", RetornaDistancia(Exec5)));
+            Console.WriteLine(string.Format("#5) A distância da rota A-E-D: {0}", RetornaDistancia(Exec5)));
 
             //6. O número de viagens começando em C e terminando em C com no máximo 3 paradas.Baseado no
             //contexto apresentado, serão 2 rotas possíveis: C - D - C (2 paradas) e C-E-B-C(3 paradas).
@@ -166,7 +166,7 @@ namespace TestePraticoLoreneConsole
                     count++;
                 rotapossivel = new List<Rotas>();
             }
-            Console.WriteLine(string.Format("O número de viagens começando em C e terminando em C com no máximo 3 paradas: {0}", count));
+            Console.WriteLine(string.Format("#6) O número de viagens começando em C e terminando em C com no máximo 3 paradas: {0}", count));
         }
 
         private static void Questao7(List<Rotas> rotas)
@@ -213,7 +213,7 @@ namespace TestePraticoLoreneConsole
                 count++;
                 rotapossivel = new List<Rotas>();
             }
-            Console.WriteLine(string.Format("O numero de viagens começando em A e terminando em C com exatamente 4 paradas: {0}", count));
+            Console.WriteLine(string.Format("#7) O numero de viagens começando em A e terminando em C com exatamente 4 paradas: {0}", count));
         }
 
         private static void Questao8(List<Rotas> rotas)
@@ -261,7 +261,7 @@ namespace TestePraticoLoreneConsole
                 }
                 rotapossivel = new List<Rotas>();
             }
-            Console.WriteLine(string.Format("O tamanho da menor viagem(em termos de distância) de A para C: {0}", menorRota.Min()));
+            Console.WriteLine(string.Format("#8) O tamanho da menor viagem(em termos de distância) de A para C: {0}", menorRota.Min()));
         }
 
         public static Rotas ProximaRotaCurta(List<Rotas> rotasAtual, Rotas rotaAnterior, string Final, List<Rotas> rotapossivel)
@@ -321,7 +321,7 @@ namespace TestePraticoLoreneConsole
                 }
                 rotapossivel = new List<Rotas>();
             }
-            Console.WriteLine(string.Format("O tamanho da menor viagem(em termos de distância) de B para B: {0}", menorRota.Min()));
+            Console.WriteLine(string.Format("#9) O tamanho da menor viagem(em termos de distância) de B para B: {0}", menorRota.Min()));
         }
     }
 }
